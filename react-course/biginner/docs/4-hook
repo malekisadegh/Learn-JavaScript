@@ -1,0 +1,10 @@
+# Hooks
+Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class.
+
+## what is a Hook?
+>Hooks are functions that let you “hook into” React state and lifecycle features from function components.
+
+> Hooks don’t work inside classes.
+
+### When would I use a Hook? 
+If you write a function component and realize you need to add some state to it

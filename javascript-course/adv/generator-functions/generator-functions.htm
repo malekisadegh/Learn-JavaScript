@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>generator-functions</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<h1>generator functions</h1>
+<p>
+    Introduced in ES6 version, generator functions are a special class of functions.
+    <br/>
+    They can be stopped midway and then continue from where it had stopped.
+    <br/>
+    Generator functions are declared with the  <strong>function* </strong> keyword 
+</p>
+<pre class="input-pre" id="input">
+    function* genFunc(){
+        yield 3;
+        yield 4;
+      }
+      genFunc(); // Returns Object [Generator] {}
+
+      genFunc().next(); // Returns {value: 3, done:false}
+</pre>
+
+<h2>Generator functions are used to return iterators</h2>
+<hr/>
+<pre  class="input-pre" id="input">
+    function* iteratorFunc() {
+        let count = 0;
+        for (let i = 0; i < 2; i++) {
+            count++;
+            yield i;
+        }
+        return count;
+      }
+      
+      let iterator = iteratorFunc();
+      console.log(iterator.next()); // {value:0,done:false}
+      console.log(iterator.next()); // {value:1,done:false}
+      console.log(iterator.next()); // {value:2,done:true}
+</pre>
+
+</body>
+</html>
+<script src="./generator-functions.js"></script>

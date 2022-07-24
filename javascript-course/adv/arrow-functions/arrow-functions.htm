@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>arrow-functions</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<h1>arrow functions</h1>
+<pre class="input-pre" id="input">
+
+    // Traditional Function Expression
+var add = function(a,b){
+    return a + b;
+  }
+  
+  // Arrow Function Expression
+  var arrowAdd = (a,b) => a + b; 
+  arrowAdd(2,3) // Will return the 5
+
+</pre>
+<!--<h3>output</h6>
+ <pre class="output-pre" id="output1">
+
+</pre> -->
+<h2>arrow functions scope</h2>
+<hr/>
+<pre  class="input-pre" id="input">
+    var obj1 = {
+        valueOfThis: function(){
+          return this;
+        }
+      }
+      var obj2 = {
+        valueOfThis: ()=>{
+          return this;
+        }
+      }
+      
+      obj1.valueOfThis(); // Will return the object obj1
+      obj2.valueOfThis(); // Will return window/global object
+</pre>
+<!-- <h3>output</h6>
+    <pre class="output-pre" id="output2"> -->
+</body>
+</html>
+<script src="./arrow-functions.js"></script>
