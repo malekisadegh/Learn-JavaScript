@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>map-object</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<h1>map object</h1>
+<p>
+    In javascript, Map is used to store key-value pairs. The key-value pairs can be of both primitive and non-primitive types
+</p>
+<pre class="input-pre" id="input">
+
+    const map1 = new Map();
+
+map1.set('a', 1);
+map1.set('b', 2);
+map1.set('c', 3);
+
+console.log(map1.get('a'));
+// expected output: 1
+
+map1.set('a', 97);
+
+console.log(map1.get('a'));
+// expected output: 97
+
+console.log(map1.size);
+// expected output: 3
+
+map1.delete('b');
+
+console.log(map1.size);
+// expected output: 2
+
+</pre>
+
+<h2>WeakMap</h2>
+<p>WeakMap is similar to Map with key differences:</p>
+<ul>
+    <li>The keys and values in weakmap should always be an object.</li>
+    <li>If there are no references to the object, the object will be garbage collected.</li>
+</ul>
+<hr/>
+<pre  class="input-pre" id="input">
+
+const map1 = new Map();
+map1.set('Value', 1);
+
+const map2 = new WeakMap();
+map2.set('Value', 2.3); // Throws an error
+
+let obj = {name:"Vivek"};
+const map3 = new WeakMap();
+map3.set(obj, {age:23});
+
+</pre>
+
+</body>
+</html>
+<script src="./map-object.js"></script>

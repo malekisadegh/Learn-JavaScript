@@ -1,0 +1,68 @@
+*{
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+h1{
+    color: blueviolet;
+}
+h2{
+    color: blueviolet;
+}
+
+.output-pre{
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 10px;
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.input-pre{
+    line-height:1.2em;
+    background:linear-gradient(180deg,#ccc 0,#ccc 1.2em,#eee 0);
+    background-size:2.4em 2.4em;
+    background-origin:content-box;
+    
+    /* some extra styles*/
+    padding: 5px;
+    margin: 10px;
+    text-align:justify;
+    font-family:calibri,arial,sans-serif;
+  }
+
+  #skill_questions td {
+    border: 2px solid white;
+    padding: 4px 20px;
+    text-align: left;
+    white-space: normal;
+    vertical-align: middle;
+}
+#skill_questions thead th {
+    background-color: #06a053;
+    padding: 4px 20px;
+    text-align: left;
+    white-space: normal;
+    vertical-align: middle;
+    text-indent: 5px;
+}
+#skill_questions tr:nth-child(odd) {
+    background-color: #c3efef;
+}
+#skill_questions tr:nth-child(even) {
+    background-color: #d7f4de;
+}
+
+#skill_questions table {
+    border-collapse: collapse;
+}
+
+img{
+    width: 70%;
+    margin: auto;
+}
+
+.align-center{
+    text-align: center;
+}
