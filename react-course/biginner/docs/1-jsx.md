@@ -1,4 +1,4 @@
-# What is JSX? 
+# What is JSX?   
 
 > The first thing you'll realize after installing your first React project is that a JavaScript function returns some HTML code
 ```
