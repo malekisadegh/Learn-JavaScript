@@ -1,0 +1,29 @@
+.main-bg {
+  @apply bg-no-repeat
+bg-cover bg-slate-800;
+
+  background-image: url(~assets/images/landing/features.svg);
+
+  background-size: cover;
+
+  min-height: 100vh;
+}
+
+.top-section-wrp {
+  @apply flex
+flex-wrap
+relative
+h-screen
+justify-between;
+}
+
+.top-app-name {
+  @apply flex
+justify-center
+absolute
+bottom-40
+right-0.5
+text-white
+text-6xl
+w-full;
+}

@@ -1,0 +1,29 @@
+body {
+  background-color: #fefdff !important;
+}
+
+.admin-panel-drawer {
+  [class^="MuiPaper"] {
+    @apply bg-gray-100 text-red-500 border-l border-orange-400;
+    [class^="MuiSvgIcon"] {
+      @apply text-red-500;
+    }
+  }
+}
+.admin-panel-app-bar {
+  @apply bg-gray-100 border-b border-orange-400 shadow-none;
+  background-color: #fefdff !important;
+  box-shadow: none !important;
+}
+
+.widget-container {
+  @apply bg-white min-h-screen flex flex-col flex-grow;
+}
+
+.top-menu-box {
+  @apply border-b border-orange-400;
+}
+
+.brand-name {
+  @apply text-orange-700;
+}

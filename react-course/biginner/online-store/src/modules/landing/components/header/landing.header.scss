@@ -1,0 +1,36 @@
+.mega-menu {
+  @apply justify-between
+items-center
+w-full
+z-50
+lg:flex
+lg:w-auto
+lg:order-1
+absolute
+3xs:left-0
+3xs:right-0
+lg:relative
+lg:left-auto
+lg:right-auto;
+  height: calc(100% - 65px);
+}
+
+
+.mega-menu-list-wrp {
+  @apply flex
+pt-6
+pr-10
+}
+
+.mega-menu-list-item {
+  @apply block
+py-2
+pr-4
+pl-3
+mx-3
+rounded
+lg:hover:bg-transparent
+lg:p-0
+text-white
+hover:bg-violet-400
+}

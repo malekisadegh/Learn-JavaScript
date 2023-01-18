@@ -1,16 +1,24 @@
 React fot biginners
 ===
 ## project Information
-- Title:  `online store`
+- Title:  `online store isc`
 - Authors:  `sadegh maleki`
 - source: [https://reactjs.org/tutorial/tutorial.html]()
 
-## Install & Dependence
+## pre Install Dependence
 - node
 - npm
 
+## Install 
+```
+npm install
+```
+## post Install 
+```
+npm --prefix node_modules/@date-io/date-fns-jalali install
+```
 ## parts
-### online-store-app
+### online-store-isc-app
 | component | description |
 | ---     | ---   |
 | test |sss |
@@ -26,7 +34,24 @@ React fot biginners
 
 ## Directory Hierarchy
 ```
-|—— index.js
+|—— src
+      |—— app.tsx
+      |—— index.js
+      |—— index.html
+      |—— theme.js
+      |—— assets
+      |—— auth
+      |—— core
+      |—— faker
+      |—— helpers
+      |—— layout
+      |—— modules
+      |—— pages
+      |—— routes
+      |—— shared
+      |—— store
+      |—— style
+      |—— utils
 ```
 ## Code Details
 
@@ -34,7 +59,7 @@ React fot biginners
 - [https://reactjs.org]()
   
 ## License
-MIT
+isc
 
 ## setting
 If you use windows please set system invironmant for node

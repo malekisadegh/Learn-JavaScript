@@ -3,6 +3,7 @@ import { createTheme } from '@mui/material/styles';
 
 // A custom theme for this app
 const theme = createTheme({
+  direction: 'rtl',
   palette: {
     primary: {
       main: '#556cd6',

@@ -1,13 +1,33 @@
 {
-    "compilerOptions": {
-        "outDir": "./dist/",
-        "allowSyntheticDefaultImports": true,
-        "sourceMap": true,
-        "noImplicitAny": true,
-        "module": "es6",
-        "target": "es5",
-        "jsx": "react",
-        "allowJs": true,
-        "moduleResolution": "node"
-    }
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "types": ["node"],
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
+    "lib": ["es2020", "es2018", "dom", "es2015", "esnext"],
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "include": ["./src/", "./custom.d.ts"],
+  "exclude": ["./node_module/"]
 }

@@ -1,0 +1,55 @@
+{
+  "root": true,
+  "ignorePatterns": ["projects/**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": ["**/tsconfig.json", "**/e2e/tsconfig.json"],
+        "createDefaultProgram": true,
+        "sourceType": "module"
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      // ts file rules
+      "rules": {
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "",
+            "style": "kebab-case"
+          }
+        ],
+        "@angular-eslint/no-empty-lifecycle-method": ["off"]
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {
+        "no-empty-function": "off",
+        "@typescript-eslint/no-empty-function": "off"
+      }
+    },
+    {
+      "files": ["*.js"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "parserOptions": {
+        "sourceType": "module"
+      }
+    }
+  ]
+}
+
+// "prettier/prettier": ["error", { "singleQuote": false }]

@@ -1,0 +1,54 @@
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.font-ir-sn-x-fa{
+  font-family: IRANSansXFaNum  !important;
+}
+.font-ir-sn-fa{
+  font-family: IRANSansFaNum  !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+label,
+legend,
+ul,
+li,
+ol,
+div,
+strong,
+mat-footer-cell,
+mat-header-cell {
+  font-family: IRANSansFaNum !important;
+  text-align: right;
+}
+
+input,
+button,
+textarea,
+option,
+select {
+  font-family: vazir !important;
+
+  span {
+    font-family: vazir !important;
+  }
+}
+thead,
+tr,
+td {
+  font-family: vazir !important;
+}

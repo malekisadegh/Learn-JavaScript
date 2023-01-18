@@ -1,0 +1,13 @@
+.MuiDataGrid-main div:nth-child(2) {
+  height: auto !important;
+}
+.data-table-header {
+  @apply bg-slate-200;
+}
+
+.data-table-cell {
+  justify-content: center !important;
+}
+
+.data-table-container {
+}

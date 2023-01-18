@@ -1,0 +1,51 @@
+.error-message {
+  @apply text-red-700;
+  font-size: 75%;
+}
+.main-form-header {
+  @apply flex justify-end;
+}
+.main-form-body {
+}
+.main-form-body-wrp {
+  @apply bg-slate-100 p-4 rounded-md;
+}
+.main-form-footer {
+  @apply flex justify-end;
+}
+
+.main-form {
+  @apply mb-8;
+}
+
+.main-form-btn {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity)) !important;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  color: #fff !important;
+  &:hover {
+    --tw-bg-opacity: 1 !important;
+    background-color: rgb(37 99 235 / var(--tw-bg-opacity)) !important;
+  }
+}
+
+.main-form-add-btn {
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  color: #fff !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity)) !important;
+  &:hover {
+    --tw-bg-opacity: 1 !important;
+    background-color: rgb(22 163 74 / var(--tw-bg-opacity)) !important;
+  }
+}
